@@ -1,4 +1,15 @@
-<div>
-  <app-product></app-product>
-  <app-payment></app-payment>
+<div [formGroup] = "transactionForm">
+
+  <h1>Vending Machine</h1>
+  <app-product formGroupName="productAmount"></app-product>
+  <app-payment formGroupName="paymentForm"></app-payment>
+
+  <div>
+    <button type="submit" (click)="onSubmit()">Submit</button>
+  </div>
+  
 </div>
+
+<pre style="margin-top:50px; border: 1px solid red; width: fit-content">
+  {{ transactionForm.value | json }}
+</pre>

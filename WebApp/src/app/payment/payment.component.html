@@ -1,15 +1,15 @@
 <h2>Payment Information</h2>
-<div id = "paymentInfo">
+<div id = "paymentInfo" [formGroup]="paymentForm">
     <div id = cardNum>
         <label>Card Number</label>
-        <input id="cardNumberInput" type="text">
+        <input id="cardNumberInput" type="text" formControlName="cardNumber">
     </div>
     <div id="expDate">
         <label>Exp Date </label>
-        <input id="expDateInput" type="text">
+        <input id="expDateInput" type="text" formControlName="expDate">
     </div>
     <div id="cvc">
         <label>CVC </label>
-        <input id="cvcInput" type="text">
+        <input id="cvcInput" type="text" formControlName="cvc">
     </div>
 </div>

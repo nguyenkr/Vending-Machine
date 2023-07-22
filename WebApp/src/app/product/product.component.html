@@ -1,15 +1,15 @@
-<div id = "productList">
+<div id = "productList" [formGroup]="form">
     <div id="soda">
         <label>Soda  95&cent;</label>
         
-        <input id="sodaAmount" type="number">
+        <input id="sodaAmount" type="number" formControlName="soda">
     </div>
     <div id="candyBar">
         <label>Candy Bar  60&cent; </label>
-        <input id="candBarAmount" type="number">
+        <input id="candBarAmount" type="number" formControlName="candyBar">
     </div>
     <div id="chips">
         <label>Chips  99&cent; </label>
-        <input id="chipAmount" type="number">
+        <input id="chipAmount" type="number" formControlName="chips">
     </div>
 </div>
