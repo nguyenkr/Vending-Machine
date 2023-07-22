@@ -1,0 +1,11 @@
+#productList {
+    display:inline-block
+}
+label{
+    float: left;
+    padding-right: 10px;
+}
+
+input{
+    float: right;
+}
